@@ -32,8 +32,8 @@ The first two buttons change the hand visuals.
 You can have your hand rendered as a mesh, joint visuals or no rendering of the hand tracking.
 
 ### Toggle Hand Ray
-By default, a dashed ray is rendered from the tip of your index finger in the direction you're pointing.
-You can toggle this behaviour on or off.
+To point more precisely at far away objects, a dashed ray can be rendered from the tip of your index finger in the direction you're pointing.
+By default, this behaviour is turned off.
 
 ### Toggle Hand Menu
 This button enables or disables use of the <a data-sveltekit-reload href="/manual/master/02-normal_mode/01-hand-menu">hand menu</a>.

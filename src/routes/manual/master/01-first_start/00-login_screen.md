@@ -17,9 +17,9 @@ Entering chARpack you're put into a menu environment, where you can choose the m
 The **Login Menu** is designed as a so called **Near Menu**, which means by default it will follow you around.
 To stop that behavior press the **Follow Me** button.
 This lets the menu stay in the same position in the room.
-By grabbing the Login Menu on top or the boarders, you can place it somewhere else in the room.
+By grabbing the Login Menu on top or the borders, you can place it somewhere else in the room.
 Pressing the **Follow Me** button again lets the menu follow you around again.
-The button **Quit** obviously closes chARpack.
+The button **Quit** closes chARpack.
 
 #### Normal
 Pressing the button **Normal** puts you into the main building environment.
