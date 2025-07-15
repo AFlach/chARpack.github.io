@@ -29,19 +29,19 @@ This menu can be navigated using the up and down arrows to the right; pressing a
 
 <img src="/images/manual/atom_menu.png" alt="Atom Menu" class="mx-auto max-w-md" />
 
-As already mentioned, atoms are created with dummies attached.
+Atoms are created with dummies attached.
 These dummies are used to create bonds or to be switched out for Hydrogen atoms.
 The number of dummies depends on the hybridization of the atom.
 
 ### Creation Hybridization
-When pressing the **Create Atom** button, the displayed number (here 1) is used as the hybridization for the freshly created atom.
+When pressing the **Create Atom** button, the displayed number (here 3) is used as the hybridization for the freshly created atom.
 The numbers correspond to the following hybridizations:
 
  * 1: sp
  * 2: sp2
  * 3: sp3
 
-The Hybridization can also be adjusted after creation.
+The hybridization can also be adjusted after creation.
 
 ### Save/Load
 The **Save/Load** button opens another dialog that shows you all the molecule files on your device.
