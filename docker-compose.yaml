@@ -1,0 +1,11 @@
+services:
+  app:
+    image: node:24-alpine   # lightweight Node.js image
+    container_name: chARpack_homepage
+    working_dir: /usr/src/app
+    volumes:
+      - ./:/usr/src/app    # mount the current directory
+      - /usr/src/app/node_modules  # keep node_modules inside container
+    ports:
+      - "3000:3000"        # expose port 3000
+    command: sh -c "npm install && npm start"
