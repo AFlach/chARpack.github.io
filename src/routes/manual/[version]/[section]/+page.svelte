@@ -1,8 +1,8 @@
 <script>
     import { Heading, P, Hr, A, Mark, Secondary, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte'
     export let data;
-    let section = data.section;
-    let version = data.version;
+    $: section = data.section;
+    $: version = data.version;
 </script>
 
 <Breadcrumb aria-label="manual breadcrumb" solid class="mb-3" solidClass="bg-gray-50 dark:bg-gray-800 rounded">

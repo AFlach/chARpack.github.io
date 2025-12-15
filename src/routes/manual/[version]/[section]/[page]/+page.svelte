@@ -9,15 +9,15 @@
     import { page } from "$app/stores";
     export let data;
 
-    let pageContent = data.pageContent;
-    let sections = data.sections;
-    let version = data.version;
 
-    let content = data.content;
-    let metadata = data.metadata;
-
-    let next = data.next;
-    let prev = data.prev;
+  // Reactive assignments
+  $: pageContent = data.pageContent;
+  $: sections = data.sections;
+  $: version = data.version;
+  $: content = data.content;
+  $: metadata = data.metadata;
+  $: next = data.next;
+  $: prev = data.prev;
 
 </script>
 
@@ -34,7 +34,7 @@
 <div class="flex justify-between">
     <div>
         {#if prev}
-            <A data-sveltekit-reload="" class="text-gray-700 dark:text-gray-400 hover:text-gray-400 dark:hover:text-white hover:no-underline" href={prev.absRoute}><Button color="light">previous</Button></A>
+            <A class="text-gray-700 dark:text-gray-400 hover:text-gray-400 dark:hover:text-white hover:no-underline" href={prev.absRoute}><Button color="light">previous</Button></A>
         {:else}
             <Button color="light" class="pointer-events-none opacity-40">previous</Button>
         {/if}
@@ -42,7 +42,7 @@
     </div>
     <div>
         {#if next}
-            <A data-sveltekit-reload="" class="text-gray-700 dark:text-gray-400 hover:text-gray-400 dark:hover:text-white hover:no-underline" href={next.absRoute}><Button color="light">next</Button></A>
+            <A class="text-gray-700 dark:text-gray-400 hover:text-gray-400 dark:hover:text-white hover:no-underline" href={next.absRoute}><Button color="light">next</Button></A>
         {:else}
             <Button color="light" class="pointer-events-none opacity-40">next</Button>
         {/if}

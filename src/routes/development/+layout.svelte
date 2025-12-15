@@ -20,9 +20,9 @@
     </SidebarGroup>
     {#each sections as section}
       <SidebarGroup class="list-none">
-      <Heading tag="h4"><A data-sveltekit-reload="" class="text-gray-800 dark:text-gray-400 hover:text-gray-400 dark:hover:text-white hover:no-underline" href={section.absRoute}>{section.title}</A></Heading>
+      <Heading tag="h4"><A class="text-gray-800 dark:text-gray-400 hover:text-gray-400 dark:hover:text-white hover:no-underline" href={section.absRoute}>{section.title}</A></Heading>
       {#each section.pages as page}
-        <SidebarItem data-sveltekit-reload="" label={page.metadata.title} href={page.absRoute} class="hover:no-underline ">
+        <SidebarItem label={page.metadata.title} href={page.absRoute} class="hover:no-underline ">
         </SidebarItem>
       {/each}
       </SidebarGroup>
