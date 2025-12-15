@@ -12,7 +12,7 @@ When the button got pressed successfully you'll be notified by a kind of clickin
 ## Menus
 Entering chARpack you're put into a menu environment, where you can choose the mode of operation.
 
-<img src="/images/manual/login_menu.png" alt="Login Screen Menu" class="mx-auto max-w-md" />
+<img src="/images/manual/1.2.0/login_menu.png" alt="Login Screen Menu" class="mx-auto max-w-md" />
 
 The **Login Menu** is designed as a so called **Near Menu**, which means it has the ability to follow you around.
 This behavior is turned off by default, to turn it on, press the **Follow Me** button.
@@ -42,7 +42,7 @@ opening a debug log for troubleshooting:
 
 Similar to the functions of the **Login Menu** the debug log has a follow me function and can be placed by grabbing the top bar.
 
-<img src="/images/manual/debug_log.png" alt="Debug Log" class="mx-auto max-w-sm" />
+<img src="/images/manual/1.2.0/debug_log.png" alt="Debug Log" class="mx-auto max-w-sm" />
 
 <!-- The button at the top left toggles a frame rate counter; when active, it is positioned in a comfortable location for AR purposes.
 This can be useful if you are experiencing performance issues. -->

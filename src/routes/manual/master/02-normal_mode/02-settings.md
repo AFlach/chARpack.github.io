@@ -2,7 +2,7 @@
 title: Settings
 ---
 
-<img src="/images/manual/settings_menu.png" alt="Settings Menu" class="mx-auto max-w-md" />
+<img src="/images/manual/master/settings_menu.png" alt="Settings Menu" class="mx-auto max-w-md" />
 
 All toggle buttons in the settings are equipped with a colored square indicating whether they are currently set to "on" or "off".
 
@@ -25,7 +25,7 @@ This mode comes in handy when creating a bond within a molecule where the force 
 ## Hand Settings
 The **Hand Settings** button opens (or closes) a submenu containing settings related to the user's hands.
 
-<img src="/images/manual/hand_settings_menu.png" alt="Hand Settings Menu" class="mx-auto max-w-md" />
+<img src="/images/manual/master/hand_settings_menu.png" alt="Hand Settings Menu" class="mx-auto max-w-md" />
 
 ### Hand Visual Toggles
 The first two buttons change the hand visuals.
@@ -49,7 +49,7 @@ This button switches the application's language between German and English.
 
 ## Cooperation settings
 
-<img src="/images/manual/coop_settings.png" alt="Cooperation Settings Menu" class="mx-auto max-w-md" />
+<img src="/images/manual/master/coop_settings.png" alt="Cooperation Settings Menu" class="mx-auto max-w-md" />
 
 In cooperation mode, a box and a ray are rendered around the head of every user to indicate where they are and where they are looking.
 If you find this behaviour distracting, you can turn each of the functionalities off.
@@ -58,7 +58,7 @@ You may also decide whether measurements made on your device should be transmitt
 
 ## Visual Settings
 
-<img src="/images/manual/visual_settings.png" alt="Visual Settings Menu" class="mx-auto max-w-md" />
+<img src="/images/manual/master/visual_settings.png" alt="Visual Settings Menu" class="mx-auto max-w-md" />
 
 ### Gaze highlighting
 chARpack utilizes the eye tracking capabilities of the device to highlight the atom the user is currently looking at.
@@ -87,7 +87,7 @@ chARpack support multiple different color schemes that change the background col
 
 ## Integration method
 
-<img src="/images/manual/integration_method.png" alt="Integration Method Menu" class="mx-auto max-w-md" />
+<img src="/images/manual/master/integration_method.png" alt="Integration Method Menu" class="mx-auto max-w-md" />
 
 The integration method is the method used for numerical integration in force field computations.
 You can choose between:

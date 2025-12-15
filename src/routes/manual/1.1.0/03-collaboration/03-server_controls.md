@@ -20,7 +20,7 @@ Here, you have the option to pick a supported output format (by adding the corre
 Pressing the **C** key on your keyboard activates a text input field. 
 Entering any valid element symbol or <a href="https://de.wikipedia.org/wiki/Simplified_Molecular_Input_Line_Entry_System" target="_blank">SMILES</a> string and pressing the **Enter** key creates the specified molecule.
 
-<img src="/images/manual/server_molecule_creation.png" alt="Creating molecules on the server" class="mx-auto max-w-md" />
+<img src="/images/manual/1.1.0/server_molecule_creation.png" alt="Creating molecules on the server" class="mx-auto max-w-md" />
 
 Pressing the **Clear** button at the bottom of the screen deletes all molecules in the scene.
 
@@ -37,12 +37,12 @@ Whole molecules can also be selected by clicking on a corner of their bounding b
 
 Tooltips can be dragged around the screen on the top bar or collapsed to save space.
 
-<img src="/images/manual/server_tooltip.png" alt="Server Tooltip" class="mx-auto max-w-md" />
+<img src="/images/manual/1.1.0/server_tooltip.png" alt="Server Tooltip" class="mx-auto max-w-md" />
 
 ### Structure formulas
 When selecting a whole molecule, the tooltip offers the additional option to generate a structure formula for the molecule using a Python library.
 
-<img src="/images/manual/structure_formula.png" alt="Structure Formula" class="mx-auto max-w-md" />
+<img src="/images/manual/1.1.0/structure_formula.png" alt="Structure Formula" class="mx-auto max-w-md" />
 
 The structure formula window can be dragged (similar to the tooltip) or resized using the indicated corners.
 Atoms can be selected within the structure formula (turquoise) or within the molecule (default selection colors).
@@ -61,4 +61,4 @@ You can switch to similar Gizmos for rotating or scaling the molecule by pressin
 There are more shortcuts available to perform specific actions on the server. 
 Hovering your mouse over the *Info* icon in the top right corner shows you a list of them.
 
-<img src="/images/manual/info_panel.png" alt="Info panel" class="mx-auto max-w-md" />
+<img src="/images/manual/1.1.0/info_panel.png" alt="Info panel" class="mx-auto max-w-md" />
