@@ -13,7 +13,7 @@ In case of an in-person scenario where all collaborators are in the same laborat
 Start chARpack and select **Scan QR** in the login screen.
 Look at the QR code on the wall, you will see a white plane over the code and an axis system on the corner of the plane with a z-axis pointing away from the wall.
 Usually, the z-axis wiggles a little bit because of scanning inaccuracy.
-Look at the code from different angles and distances and press the button **Stop Scan** that should follow you around when the wiggle is least noticeable.
+If no QR code is found within 10 seconds, the scan is aborted and you are returned to the login menu.
 
 In case of a remote collaboration, a similar placement of QR codes is recommended to reflect the scene correctly.
 If, for example, one client puts the code on the wall and the other puts the code on the ground,
