@@ -21,18 +21,13 @@ the way molecules respond when grabbed or clicked and their interactions with th
 - **Login**: Provides the functionality of the **Login** menu (connecting to a server, establishing a common coordinate system by scanning a QR code etc.)
 - **ForceField**: Contains different ways to compute and apply the force field to molecules in the scene so they behave realistically.
 
-The **myScrollObject** script found in the *client_ui/custom_elements* folder provides the functionality of a scrollable menu used in both the atom menu and the hand menu.
-
 ### Prefabs
 The *prefabs* folder contains a few useful prefabs. 
 
 <img src="/images/development/prefab.png" alt="Prefabs" class="mx-auto max-w-xl" />
 
 Besides the basics like **Atom** and **Bond**, there are also some that are more generally useful.
-If you intend to make a new menu, for example, you may find the **CloseMeButton** prefab to be of interest. Other buttons include a **DeleteMeButton** and a **CopyMeButton**.
-They contain the HoloLens' **PressableButton** functionality (e.g. touch interactability and the visualizations for pressing the button) as well as icons corresponding
-to their respective use cases and a localized main label (text in German and English).
-A **SettingsButton** prefab in the specific format used by the settings menu is also provided.
+The prefabs are organized by categories; for example, you can find the **MainMenu** prefab in `client_ui` and `server_ui` contains two-dimensional canvas-based UI elements as they are used in the server scene.
 
 To use a prefab, you only need to instantiate it and assign a method (see the <a data-sveltekit-reload href="/development/04-localization/02-example">button creation example</a> for more details).
 

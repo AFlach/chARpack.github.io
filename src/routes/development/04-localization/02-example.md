@@ -3,46 +3,35 @@ title: Example dual-language button
 ---
 
 ## Creating the button
-First, instantiate an MRTK button.
-Basic button prefabs are available in the MRTK in different sizes.
-To find the basic MRTK button prefabs go in the *Project* section in the Unity editor and follow this path: `Packages/Mixed Reality Toolkit Foundation/SDK/Features/UX/Interactable/Prefabs/PressableButtonHoloLens2*`.
+First, instantiate an MRTK button. 
+The project contains many menu prefabs from which you can copy a single button; there is also a prefab called **CanvasButtonWithBackground** found in `Assets/Resources/prefabs`.
 Alternatively, you can use the search field in the *Project* section and for example type *button* in the search field.
 Make sure the search is executed in the whole project and not only in *Assets*.
-Also, there are specific button prefabs that are already used in chARpack available in `Assets/Resources/prefabs`.
-The most common button prefabs provided by chARpack are listed here:
-
-- **SettingsButton**: a button in the fitting size for the Settings menu
-- **CloseMeButton**: a button with a "Close" icon 
-- **DeleteMeButton**: a button with a "Trash" icon
 
 Choose a type of button and instantiate it.
-Either directly in the Scene you are working on or via the *Instantiate* method within a script.
-If you are instantiating it as a child of a *ButtonCollection* (e.g. in the Settings menu), you will need to click *Update collection* on the parent in order to properly integrate the new button into the layout.
+Either directly in the Scene/prefab you are working on or via the *Instantiate* method within a script.
 
 ## Adding method listeners and icons
 Some of the prefabs already have icons that correspond to their purpose.
 In case you want a different icon, manually update it.
-In addition, chARpack provides a custom icon collection, which is located in `Assets/Icons`.
+chARpack's sprite icons are located in `Assets > Resources > Icons > Sprites`; you can also use font icons.
 
 ### Predefined content
-All MRTK button prefabs have a *ButtonConfigHelper* component for easily changing icon, text, and associated methods.
-In the field *Main label text* the label of the button can be changed.
-For changes of the icons and icon styles use the available interface functions in the *Icon* section.
-Either go to the *PressableButtonHololens2* component or to the *ButtonConfigHelper* component to assign a call to a method.
-Add an entry to the *ButtonPressed* or *OnClick* list, respectively.
-
-> MRTK buttons only respond to mouse clicks if the method they call is attached in the *OnClick* event list, not in the *ButtonPressed* list.
-> We recommend using the *OnClick* list in order for all buttons to work the same way.
-
-Add the game object with the associated script to the object field and choose the method you wish to call from the dropdown menu next to it.
-For more information see the <a href="https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/button?view=mrtkunity-2022-05" target="_blank">MRTK documentation</a>.
+The buttons used in chARpack generally follow a default structure where you can find icons and label texts in `Frontplate > AnimatedContent` within the button.
+The *Text* child game object contains a **TextMeshPro - Text (UI)** component (accessible as a component of type `TextMeshProUGUI` from script) which controls the label text.
+The *Icon* child object contains different options; you can either set a font icon or a sprite icon.
+Method calls can be assigned to the event lists (usually the `OnClicked` event) in the **PressableButton** component.
+If adding a method call in the editor, drag the game object with the associated script (that contains the method you want to call) to the object field and choose the method from the dropdown menu next to it.
+You can do this in the editor, but for consistency purposes it is preferrable to do so from within a script as described in the next section. 
 
 ### Scripting
-To set an icon style or a specific icon from within a script, call the *ButtonConfigHelper* component's corresponding methods.
-Refer to the <a href="https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/button?view=mrtkunity-2022-05" target="_blank">MRTK documentation</a> for more detailed explanations.
-Adding a method listener can be done after instantiating the button.
-Use `GetComponent<ButtonConfigHelper>()` on the instantiated button and add listener `OnClick.AddListener(delegate{GameObject.Method(params)})`.
-This will add the corresponding method listener at runtime.
+To add a method listener after instantiating the button, follow the structure: 
+```csharp 
+buttonGameObject.GetComponent<PressableButton>.onClick.AddListener(delegate { yourMethod(arguments); });
+```
+
+This will add the corresponding method listener at runtime (i.e., the method will be called when the button is clicked).
+For more information see the <a href="https://learn.microsoft.com/en-us/dotnet/api/mixedreality.toolkit.ux.pressablebutton?view=mrtkuxcore-3.2" target="_blank">MRTK3 documentation</a> or look at other examples of buttons in the project.
 
 ## Adding translations
 All items should provide English and German texts and labels.
@@ -60,6 +49,15 @@ Content other than text can also be localized, see the <a href="https://docs.uni
 After that, change the active locale to German and enter the corresponding translation.
 Tracked changes in text will be marked by a green background.
 Translations are saved in a string table (e.g. `Assets/Locales/My Strings`), which can also be edited separately in `Window > Asset Management > Localization Tables`.
+
+Alternatively, if you want to choose a key name for your new localized string (by default, Unity uses the path to its GameObject as a key, which can be quite long), you can also follow a similar process as for the scripting approach.
+Simply right-click on the **TextMeshPro** or **TextMeshProUGUI** component you want to localize and select *Localize Property* in the menu that appears.
+This will add a **GameObjectLocalizer** component to your object, which contains all the relevant localization information, such as which text or UI object is tracked by the localization system.
+
+<img src="/images/development/game_object_localizer.png" alt="Game Object Localizer" class="mx-auto max-w-xl" />
+
+In this component, you can choose which entry from which localization table you would like to use, as well as directly edit its translations.
+Here, you can either choose an existing localized string that fits your purposes or create a new one with new translations by selecting `My Strings` as the *Table Collection* and then pressing *Add Table Entry*.
 
 ### Scripting
 Open the *My Strings* table in `Window > Asset Management > Localization Tables` and add new entries for any required text and enter both, the English, and the German translations in the corresponding fields.

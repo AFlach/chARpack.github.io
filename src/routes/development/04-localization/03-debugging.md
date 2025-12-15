@@ -12,7 +12,7 @@ This is usually due to the *Game Object Localizer* component not tracking to the
 entry at all) in the string table. To fix this, open `IconAndText > TextMeshPro` of the object you intend to localize.
 At the bottom, you should find the *Game Object Localizer* component.
 
-Example usage of the *Game Object Localizer* component on the **Delete Me** button:
+Example usage of the *Game Object Localizer* component on the **Create Atom**:
 <img src="/images/development/game_object_localizer.png" alt="Game Object Localizer" class="mx-auto max-w-xl" />
 
 When this issue occurs, the *Text* field usually points to **None**, meaning the *Entry* field (nested under *Text*) is empty.

@@ -7,12 +7,12 @@ The basic steps are also found on the official Microsoft page [here](https://lea
 Once the test run was successful, you're now ready to deploy chARpack to your HoloLens2.
 Again, go to 
 ```
-File > Build Settings ...
+File > Build Profiles
 ```
 
 This time, click on **Build**, which opens a folder dialog.
 
-<img src="/images/manual/build.png" alt="Build" class="mx-auto max-w-xl" />
+<img src="/images/development/build.png" alt="Build" class="mx-auto max-w-xl" />
 
 Create a folder named **build** inside the chARpack project folder and select it using the dialog.
 Unity should start the **Building Player** process.
@@ -29,11 +29,11 @@ In some cases reinstalling VS helps.
 However, if you do not want to reinstall VS or this simply does not help, you have to deactivate the **Burst** compiler.
 Go to the **Player Settings**
 
-<img src="/images/manual/project_settings.png" alt="Project Settings" class="mx-auto max-w-xl" />
+<img src="/images/development/project_settings.png" alt="Project Settings" class="mx-auto max-w-xl" />
 
 Find the section **Burst AOT Settings** and undo the checkmark on **Enable Burst Compilation**.
 
-<img src="/images/manual/burst.png" alt="Burst" class="mx-auto max-w-xl" />
+<img src="/images/development/burst.png" alt="Burst" class="mx-auto max-w-xl" />
 
 ### IP of your HoloLens2
 To be able to deploy chARpack via WiFi, you need to connect your machine that runs Unity to the same network (or a reachable network) as the HoloLens2.

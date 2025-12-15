@@ -7,9 +7,9 @@ Since chARpack is developed using the game engine Unity, we first need to instal
 Go to the <a href="https://unity.com/download" target="_blank">download page of Unity</a> and download Unity Hub on your computer.
 Unity Hub is a management tool that will help you download and install different versions of Unity.
 Once the download is complete, run the installer and follow the on-screen instructions to install Unity Hub.
-Here we need to install the correct version of Unity which is <a href="unityhub://2022.3.27f1/73effa14754f" target="_blank">2022.3.27f1</a>.
+Here we need to install the correct version of Unity which is <a href="unityhub://6000.0.38f1/82314a941f2d" target="_blank">6000.0.38f1</a>.
 You can also download the newest version of Unity and update the project, but this is **not recommended**.
-Download and install version <a href="unityhub://2022.3.27f1/73effa14754f" target="_blank">2022.3.27f1</a> of Unity.
+Download and install version <a href="unityhub://6000.0.38f1/82314a941f2d" target="_blank">6000.0.38f1</a> of Unity.
 Make sure that you add the modules **Universal Windows Platform Build** and **Windows Build Support (IL2CPP)** to be able to deploy chARpack on the HoloLens2.
 To be able to run builds for Android devices like the Meta Quest series, add **Android Build Support** and the connected modules.
 
@@ -42,34 +42,40 @@ The project should now show in the list of projects.
 
 Since chARpack runs on the HoloLens2, we need to add Microsoft's MRTK tarballs.
 
-### MRTK
+### MRTK3
 Because of their size, MRTK tarballs are not checked into the git repository.
-Therefore, the used MRTK packages have to be reinstalled.
+Therefore, the used packages have to be reinstalled.
 Download and run the <a href="https://www.microsoft.com/en-us/download/details.aspx?id=102778" target="_blank">MixedRealityFeatureTool</a> and select chARpack's root folder as **Project Path**.
 Click **Discover Features** and activate the following features:
 
 ```
-Mixed Reality Toolkit >
-Mixed Reality Toolkit Foundations
-Mixed Reality Toolkit Extensions
-Mixed Reality Toolkit Examples
-Mixed Reality Toolkit Standard Assets
+MRTK3 >
+MRTK Graphics Tools
+MRTK Core Definitions 
+MRTK Extended Assets
+MRTK Input 
+MRTK Spatial Manipulation
+MRTK Standard Assets
+MRTK Tools
+MRTK UX Components
+MRTK UX Components (Non-Canvas)
+MRTK UX Core Scripts
 
 Platform Support >
 Mixed Reality OpenXR Plugin
 ```
-All these features should also appear with the tag "Version x.x.x currently installed".
+All these features should also appear with the tag "Version x.x.x currently installed"; this does not always work for MRTK3 packages. Usually, it should be sufficient to use the newest (non-prerelease) version. If you encounter any errors here, check for the correct package version on GitHub in `Packages > manifest.json`.
 Click **Get Features** and confirm that step by clicking **Import**.
 
 ### OpenBabel
 In the current version of chARpack, OpenBabel should automatically be downloaded and installed if it is not already found on the system.
-If this is unsuccessful for some reason, you may need to perform a manual installation:
+<!-- If this is unsuccessful for some reason, you may need to perform a manual installation:
 
 For server support of OpenBabel please install the <a href="https://github.com/openbabel/openbabel/releases/latest" target="_blank">latest</a> version (x64 exe).
 Take the `OBDotNet.dll` from the OpenBabel install directory and copy it into `Assets/plugins`.
 If your system if having trouble to detect all necessary DLLs, check if the OpenBabel install path is added to your `PATH`.
 On Windows go to "Edit the system environment variables"; under "Environment Variables..." add the OpenBabel install path to your "Path" variable in the system variables.
-On Linux add the OpenBabel install path to your `PATH` variable.
+On Linux add the OpenBabel install path to your `PATH` variable. -->
 
 ### NuGet
 Download the file `NuGetForUnity.*.unitypackage` from the latest release of <a href="https://github.com/GlitchEnzo/NuGetForUnity/releases/latest" target="_blank">NuGet for Unity</a> (Note: Look for the release page of that project, no need to clone the source tree).
@@ -83,7 +89,7 @@ For now, you can click **Ignore** and continue with the installation process.
 Drag-and-drop the `.unitypackage` into the **Project** section of your Unity window to install it.
 A pop-up should open and shows you the files that will be added to the project, click **Import**.
 This should add a **NuGet** option to the menu bar of Unity.
-<img src="/images/manual/nuget_menu_bar.png" alt="NuGet Menu Bar" class="mx-auto max-w-xl" />
+<img src="/images/development/nuget_menu_bar.png" alt="NuGet Menu Bar" class="mx-auto max-w-xl" />
 
 > Note: If the NuGet option is not available right away, simply close and reload the project.
 
@@ -104,13 +110,15 @@ pythonnet
 ### UWP
 Next, go to the menu bar of Unity and click
 ```
-File > Build Settings ...
+File > Build Profiles
 ```
-<img src="/images/manual/build_settings.png" alt="Build Settings" class="mx-auto max-w-xl" />
 
 Select the option **Universal Windows Platform** on the left and click on **Switch Platform**.
 
-<img src="/images/manual/switch_platform.png" alt="Switch Platform" class="mx-auto max-w-xl" />
+<img src="/images/development/switch_platform.png" alt="Switch Platform" class="mx-auto max-w-xl" />
+
+Make sure that, when building for Universal Windows, the LoginScreenScene and the MainScene are checked in the scene list. 
+Conversely, when building the standalone desktop application, make sure only the ServerScene is checked here.
 
 ## Test Run
 Now chARpack should be set up for the first test run.
@@ -120,14 +128,6 @@ Assets > Scenes
 ```
 and double click **LoginScreenScene**.
 Press the play button (top center of the Unity window) for running the test.
-
-> If the content of the **LoginScreenScene** or the **MainScene** occur in purple, you'll need to upgrade the MRTK Standard Shader to Universal Render Pipeline (URP).
-
-Running
-```
-Mixed Reality > Toolkit > Utilities > Upgrade MRTK Standard Shader to Universal Render Pipeline
-```
-should fix the problem, and you will be able to see the GUI when running the program.
 
 ### Interactions inside Unity editor
 Now chARpack is running inside Unity editor.
