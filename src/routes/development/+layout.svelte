@@ -9,7 +9,7 @@
     img: '/charpack_logo.svg'
   };
 
-  let sections = $page.data.sections;
+  $: sections = $page.data.sections;
 
 </script>
 
