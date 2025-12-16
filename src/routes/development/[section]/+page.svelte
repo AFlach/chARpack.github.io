@@ -2,7 +2,7 @@
     import { Heading, P, Hr, A, Mark, Secondary, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte'
     import { page } from "$app/stores";
     
-    let section = $page.data.sections.filter(sec => {return sec.name === $page.params.section})[0];
+    $: section = $page.data.sections.filter(sec => {return sec.name === $page.params.section})[0];
 
 </script>
 

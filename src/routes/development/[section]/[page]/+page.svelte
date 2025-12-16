@@ -8,7 +8,7 @@
     import { Heading, P, Hr, A, Mark, Secondary, Breadcrumb, BreadcrumbItem, Button } from 'flowbite-svelte'
     import { page } from "$app/stores";
 
-    let pageContent = $page.data.sections.filter(sec => {return sec.name === $page.params.section})[0].pages.filter(p => {return p.pageRoute === $page.params.page})[0];
+    $: pageContent = $page.data.sections.filter(sec => {return sec.name === $page.params.section})[0].pages.filter(p => {return p.pageRoute === $page.params.page})[0];
 
     $: pageList = $page.data.sections.flatMap((section) => section.pages);
 	$: index = pageList.findIndex(({ absRoute }) => absRoute + '/' === $page.url.pathname);
