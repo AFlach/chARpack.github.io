@@ -8,7 +8,7 @@ In this development guide we explain the fundamental implementation details abou
 
 ## Overview
 
-For a short introduction to the Unity functionalities most commonly used in this project, have a look at our small introduction <a href="/development/01-implementation/01-unity">Using Unity</a>.
+For a short introduction to the Unity functionalities most commonly used in this project, have a look at our small introduction [Using Unity](/development/01-implementation/01-unity).
 
 ### Important scripts
 chARpack is built using many scripts for specific purposes (e.g. a settings script for the settings menu).
@@ -24,12 +24,12 @@ the way molecules respond when grabbed or clicked and their interactions with th
 ### Prefabs
 The *prefabs* folder contains a few useful prefabs. 
 
-<img src="/images/development/prefab.png" alt="Prefabs" class="mx-auto max-w-xl" />
+![Prefabs {class="mx-auto max-w-xl"}](/images/development/prefab.png)
 
 Besides the basics like **Atom** and **Bond**, there are also some that are more generally useful.
 The prefabs are organized by categories; for example, you can find the **MainMenu** prefab in `client_ui` and `server_ui` contains two-dimensional canvas-based UI elements as they are used in the server scene.
 
-To use a prefab, you only need to instantiate it and assign a method (see the <a href="/development/04-localization/02-example">button creation example</a> for more details).
+To use a prefab, you only need to instantiate it and assign a method (see the [button creation example](/development/04-localization/02-example) for more details).
 
 There are also prefabs for the different types of menus, tooltips and more.
 
@@ -37,7 +37,7 @@ There are also prefabs for the different types of menus, tooltips and more.
 The project currently contains three different scenes for separate purposes.
 
 #### Main Scene
-<img src="/images/development/main_scene.png" alt="Main Scene" class="mx-auto max-w-xl" width="600"/>
+![Main Scene {class="mx-auto max-w-xl" width="600"}](/images/development/main_scene.png)
 
 This scene provides all the features that are available on the AR device.
 However, some functions are only featured on the server.
@@ -45,13 +45,13 @@ However, some functions are only featured on the server.
 If you are currently editing something that happens during runtime, you will most likely test it by running the **Main Scene**.
 
 #### Login Scene
-<img src="/images/development/login_scene.png" alt="Login Scene" class="mx-auto max-w-xl" width="600"/>
+![Login Scene {class="mx-auto max-w-xl" width="600"}](/images/development/login_scene.png)
 
 The **Login Scene** is normally only used for a short time during runtime: when starting chARpack.
 It provides the interface for connecting to a server for collaboration, accessing the debug log, or scanning a QR code and entering the **Main Scene**.
 
 #### Server Scene
-<img src="/images/development/server_scene.png" alt="Server Scene" class="mx-auto max-w-xl" width="600"/>
+![Server Scene {class="mx-auto max-w-xl" width="600"}](/images/development/server_scene.png)
 
 The **Server Scene** contains the framework for collaboration and is the central node for any network traffic.
 In addition, it manages network connections, tracks interactions in the atom world and broadcasts them to other users to keep collaborators synchronized.

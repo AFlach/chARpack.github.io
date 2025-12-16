@@ -10,7 +10,7 @@ With the force field activated, the rest of the molecule follows the dragged ato
 The currently grabbed atom is highlighted by a blue halo around it.
 While interacting with atoms, you can use both hands to grab two different atoms and, for example, bring them together.
 
-<img src="/images/manual/1.2.0/atom_interaction.png" alt = "Atom interaction" class="mx-auto max-w-md" />
+![Atom interaction](manual/atom_interaction.png)
 
 ## Moving the Molecule
 When moving your hand close to the molecule, the edges of an enclosing bounding box are shown.
@@ -19,7 +19,7 @@ Grabbing the corner again with two fingers (index and thumb) shows the whole box
 While holding the corner, you can move the whole molecule without inducing any forces.
 Additionally, the rotation of the hand can be utilized for easy positioning of the molecule.
 
-<img src="/images/manual/1.2.0/box_interaction.png" alt="Box interaction" class="mx-auto max-w-md" />
+![Box interaction](manual/box_interaction.png)
 
 ## Create Bonds
 Every atom is created with dummy atoms corresponding to its current hybridization.
@@ -28,7 +28,7 @@ That should color the two dummies blue.
 When the currently grabbed molecule/atom is released while blue, a bond is created.
 Creating bonds also works within a single molecule.
 
-<img src="/images/manual/1.2.0/merge.gif" alt="Merge" class="mx-auto max-w-md" />
+![Merge](manual/merge.gif)
 
 ## Selection
 You can select a single or multiple atoms.
@@ -38,7 +38,7 @@ The selection highlights the atom and spawns a tool tip.
 The tool tip consists of a small frame that shows information and provides the ability for manipulation, and a line that connects the selected atom/object and the tool tip frame.
 To deselect an atom, either click on the atom again or press the close button (X) in the tool tip frame.
 
-<img src="/images/manual/1.2.0/select.gif" alt="Select" class="mx-auto max-w-md" />
+![Select](manual/select.gif)
 
 ## Fragment Rotation Mode
 For ease of use, a fragment rotation functionality has been implemented: When active, a blue bar is rendered from your index finger knuckle to your index finger tip, indicating the direction this interaction will happen.
@@ -47,7 +47,7 @@ The atom you're grabbing will be fixed in place and you can rotate the fragment 
 By default, this interaction mode is inactive.
 You can toggle the behaviour by pressing the **Fragment Rotation Mode** button in your left palm.
 
-<img src="/images/manual/1.2.0/fragment_rotation.gif" alt="Fragment Rotation Mode" class="mx-auto max-w-md" />
+![Fragment Rotation Mode](manual/fragment_rotation.gif)
 
 ## Measurement Mode
 In **Measurement Mode** you can measure the distance or the angle between specific atoms that can also be from two different molecules.
@@ -56,9 +56,9 @@ Measurement mode freezes the entire scene so input can not accidentally change a
 
 By applying a selection gesture on an atom, a measurement will be initialized.
 At first, the measurement will be attached to the tip of your index finger until you select another atom and thereby fix the measurement.
-A simple measurement between two atoms will draw a dashed line between them, labelled with their current distance in Angstrom (you can change the unit of measurement to picometers in the <a href="/manual/master/02-normal_mode/02-settings">Settings</a> menu).
+A simple measurement between two atoms will draw a dashed line between them, labelled with their current distance in Angstrom (you can change the unit of measurement to picometers in the [Settings](xref:02-normal_mode/02-settings) menu).
 Adding another measurement to an atom that already is part of a measurement, shows the angle between their respective distance lines.
 The applied measurements are updated live when manipulating atoms or molecules again when outside of the Measurement mode.
 
-<img src="/images/manual/1.2.0/measurement.gif" alt="Measurment Mode" class="mx-auto max-w-md" />
+![Measurment Mode](manual/measurement.gif)
 

@@ -45,7 +45,7 @@ export async function load({ params, url }) {
 
   return {
     content: mod.default,      // Markdown content (or compiled Svelte component if using mdsvex)
-    metadata: mod.metadata,    // Optional metadata from the MD file
+    metadata: mod.metadata || {},    // Optional metadata from the MD file
     version,
     section,
     page,

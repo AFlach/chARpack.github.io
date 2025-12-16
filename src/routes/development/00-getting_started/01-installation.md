@@ -4,12 +4,12 @@ title: Installation
 
 ## Unity
 Since chARpack is developed using the game engine Unity, we first need to install it.
-Go to the <a href="https://unity.com/download" target="_blank" rel="noreferrer">download page of Unity</a> and download Unity Hub on your computer.
+Go to the [download page of Unity](https://unity.com/download) and download Unity Hub on your computer.
 Unity Hub is a management tool that will help you download and install different versions of Unity.
 Once the download is complete, run the installer and follow the on-screen instructions to install Unity Hub.
-Here we need to install the correct version of Unity which is <a href="unityhub://6000.0.38f1/82314a941f2d" target="_blank" rel="noreferrer">6000.0.38f1</a>.
+Here we need to install the correct version of Unity which is [6000.0.38f1](unityhub://6000.0.38f1/82314a941f2d).
 You can also download the newest version of Unity and update the project, but this is **not recommended**.
-Download and install version <a href="unityhub://6000.0.38f1/82314a941f2d" target="_blank" rel="noreferrer">6000.0.38f1</a> of Unity.
+Download and install version [6000.0.38f1](unityhub://6000.0.38f1/82314a941f2d) of Unity.
 Make sure that you add the modules **Universal Windows Platform Build** and **Windows Build Support (IL2CPP)** to be able to deploy chARpack on the HoloLens2.
 To be able to run builds for Android devices like the Meta Quest series, add **Android Build Support** and the connected modules.
 
@@ -25,8 +25,8 @@ Open the installer by selecting `Tools > Get Tools and Features` and click on **
 Enable the modules and **Modify** in the bottom right corner to install them.
 
 ## Download
-In order to be able to contribute to the project and benefit from version control functionalities, you will need to install <a href="https://git-scm.com/downloads" target="_blank" rel="noreferrer">Git</a>.
-To load chARpack into Unity you first need to download chARpack from our <a href="https://github.com/KoehnLab/chARpack" target="_blank" rel="noreferrer">GitHub repository</a>.
+In order to be able to contribute to the project and benefit from version control functionalities, you will need to install [Git](https://git-scm.com/downloads).
+To load chARpack into Unity you first need to download chARpack from our [GitHub repository](https://github.com/KoehnLab/chARpack).
 You click on the green Button **code** and select `Download ZIP` (this also works without having Git installed) or you use Git to clone the project to your disk
 ```bash
 git clone --recursive --depth=1 https://github.com/KoehnLab/chARpack.git
@@ -45,7 +45,7 @@ Since chARpack runs on the HoloLens2, we need to add Microsoft's MRTK tarballs.
 ### MRTK3
 Because of their size, MRTK tarballs are not checked into the git repository.
 Therefore, the used packages have to be reinstalled.
-Download and run the <a href="https://www.microsoft.com/en-us/download/details.aspx?id=102778" target="_blank" rel="noreferrer">MixedRealityFeatureTool</a> and select chARpack's root folder as **Project Path**.
+Download and run the [MixedRealityFeatureTool](https://www.microsoft.com/en-us/download/details.aspx?id=102778) and select chARpack's root folder as **Project Path**.
 Click **Discover Features** and activate the following features:
 
 ```
@@ -67,8 +67,8 @@ Mixed Reality OpenXR Plugin
 All these features should also appear with the tag "Version x.x.x currently installed"; this does not always work for MRTK3 packages. Usually, it should be sufficient to use the newest (non-prerelease) version. If you encounter any errors here, check for the correct package version on GitHub in `Packages > manifest.json`.
 Click **Get Features** and confirm that step by clicking **Import**.
 
-### OpenBabel
-In the current version of chARpack, OpenBabel should automatically be downloaded and installed if it is not already found on the system.
+### OpenBabel and NuGet
+In the current version of chARpack, OpenBabel and NuGet should automatically be downloaded and installed if it is not already found on the system.
 <!-- If this is unsuccessful for some reason, you may need to perform a manual installation:
 
 For server support of OpenBabel please install the <a href="https://github.com/openbabel/openbabel/releases/latest" target="_blank">latest</a> version (x64 exe).
@@ -77,7 +77,7 @@ If your system if having trouble to detect all necessary DLLs, check if the Open
 On Windows go to "Edit the system environment variables"; under "Environment Variables..." add the OpenBabel install path to your "Path" variable in the system variables.
 On Linux add the OpenBabel install path to your `PATH` variable. -->
 
-### NuGet
+<!-- ### NuGet
 Download the file `NuGetForUnity.*.unitypackage` from the latest release of <a href="https://github.com/GlitchEnzo/NuGetForUnity/releases/latest" target="_blank" rel="noreferrer">NuGet for Unity</a> (Note: Look for the release page of that project, no need to clone the source tree).
 To be able to install the `.unitypackage` file of **NuGetForUnity** you have to start the project for the first time.
 
@@ -89,7 +89,7 @@ For now, you can click **Ignore** and continue with the installation process.
 Drag-and-drop the `.unitypackage` into the **Project** section of your Unity window to install it.
 A pop-up should open and shows you the files that will be added to the project, click **Import**.
 This should add a **NuGet** option to the menu bar of Unity.
-<img src="/images/development/nuget_menu_bar.png" alt="NuGet Menu Bar" class="mx-auto max-w-xl" />
+![Nuget {class="mx-auto max-w-xl"}](/images/development/nuget_menu_bar.png)
 
 > Note: If the NuGet option is not available right away, simply close and reload the project.
 
@@ -105,7 +105,7 @@ MathNet.Numerics
 Microsoft.MixedReality.QR
 Microsoft.VCRTForwarders.140
 pythonnet
-```
+``` -->
 
 ### UWP
 Next, go to the menu bar of Unity and click
@@ -115,7 +115,7 @@ File > Build Profiles
 
 Select the option **Universal Windows Platform** on the left and click on **Switch Platform**.
 
-<img src="/images/development/switch_platform.png" alt="Switch Platform" class="mx-auto max-w-xl" />
+![Switch Platform {class="mx-auto max-w-xl"}](/images/development/switch_platform.png)
 
 Make sure that, when building for Universal Windows, the LoginScreenScene and the MainScene are checked in the scene list. 
 Conversely, when building the standalone desktop application, make sure only the ServerScene is checked here.
@@ -141,4 +141,4 @@ Using the mouse wheel makes it easy to press buttons in chARpack.
 
 Alternatively, both buttons and molecules in the scene can be interacted with using mouse clicks.
 
-For instructions on deploying chARpack to your device, see the <a href="/development/00-getting_started/02-deployment">Deployment</a> section.
+For instructions on deploying chARpack to your device, see the [Deployment](/development/00-getting_started/02-deployment) section.

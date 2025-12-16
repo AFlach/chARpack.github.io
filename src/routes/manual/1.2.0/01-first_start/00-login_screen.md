@@ -12,7 +12,7 @@ When the button got pressed successfully you'll be notified by a kind of clickin
 ## Menus
 Entering chARpack you're put into a menu environment, where you can choose the mode of operation.
 
-<img src="/images/manual/1.2.0/login_menu.png" alt="Login Screen Menu" class="mx-auto max-w-md" />
+![Login Screen Menu](manual/login_menu.png)
 
 The **Login Menu** is designed as a so called **Near Menu**, which means it has the ability to follow you around.
 This behavior is turned off by default, to turn it on, press the **Follow Me** button.
@@ -22,7 +22,7 @@ The button **Quit** closes chARpack.
 
 #### Normal
 Pressing the button **Normal** puts you into the main building environment.
-For more details on this mode see the section [Normal Mode](/manual/master/02-normal_mode) of the manual.
+For more details on this mode see the section [Normal Mode](xref:02-normal_mode) of the manual.
 
 #### Connect
 The button **Connect** lets you connect to a chARpack server that is hosted in your network.
@@ -32,17 +32,17 @@ The number in brackets behind the text gives an indication of how many servers a
 The button **Scan QR** lets you scan room anchors for collaboration in the same room.
 
 #### Scan Screen
-The button **Scan Screen** lets you scan your desktop screen to enable <a href="/manual/master/04-async_mode/00-general">Async Mode</a> interactions.
+The button **Scan Screen** lets you scan your desktop screen to enable [Async Mode](xref:04-async_mode/00-general) interactions.
 
 #### Settings
-The button **Settings** opens a menu containing different <a href="/manual/master/02-normal_mode/02-settings">settings</a>; 
+The button **Settings** opens a menu containing different [Settings](xref:02-normal_mode/02-settings); 
 most of them are only useful once in *Normal Mode* or connected to a server.
 However, you can already do things such as changing the color scheme (the background color of the AR windows), switching the active language or
 opening a debug log for troubleshooting:
 
 Similar to the functions of the **Login Menu** the debug log has a follow me function and can be placed by grabbing the top bar.
 
-<img src="/images/manual/1.2.0/debug_log.png" alt="Debug Log" class="mx-auto max-w-sm" />
+![Debug Log {class="mx-auto max-w-sm"}](manual/debug_log.png)
 
 <!-- The button at the top left toggles a frame rate counter; when active, it is positioned in a comfortable location for AR purposes.
 This can be useful if you are experiencing performance issues. -->

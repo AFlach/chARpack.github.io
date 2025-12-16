@@ -2,8 +2,9 @@ import { mdsvex } from "mdsvex";
 import mdsvexConfig from "./mdsvex.config.js";
 import preprocess from "svelte-preprocess";
 import adapter from "@sveltejs/adapter-static";
+import { getManualVersions } from './src/lib/manualPages.js';
 
-const manualVersions = ['master', '1.1.0'];
+const manualVersions = getManualVersions();
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {

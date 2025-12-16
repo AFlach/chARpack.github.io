@@ -2,12 +2,12 @@
 title: Settings
 ---
 
-<img src="/images/manual/1.1.0/settings_menu.png" alt="Settings Menu" class="mx-auto max-w-md" />
+![Settings Menu](manual/settings_menu.png)
 
 All toggle buttons in the settings are equipped with a colored square indicating whether they are currently set to "on" or "off".
 
 ## Toggle Mesh
-This button turns the rendering of the spatial awareness of [OpenXR](https://www.khronos.org/OpenXR/) on and off.
+This button turns the rendering of the spatial awareness of [OpenXR](https://www.khronos.org/OpenXR) on and off.
 The real world surroundings are detected by your device in a (usually) 2.5 second interval.
 Toggling the button does not turn on/off the detection of your surroundings, just the rendered wireframe overlay.
 
@@ -25,7 +25,7 @@ This mode comes in handy when creating a bond within a molecule where the force 
 ## Hand Settings
 The **Hand Settings** button opens (or closes) a submenu containing settings related to the user's hands.
 
-<img src="/images/manual/1.1.0/hand_settings_menu.png" alt="Hand Settings Menu" class="mx-auto max-w-md" />
+![Settings Menu](manual/settings_menu.png)
 
 ### Hand Visual Toggles
 The first two buttons change the hand visuals.
@@ -36,7 +36,7 @@ To point more precisely at far away objects, a dashed ray can be rendered from t
 By default, this behaviour is turned off.
 
 ### Toggle Hand Menu
-This button enables or disables use of the <a href="/manual/1.1.0/02-normal_mode/01-hand-menu">hand menu</a>.
+This button enables or disables use of the [Hand Menu](xref:02-normal_mode/01-hand-menu).
 By default, the menu is enabled for user comfort; if you prefer not using it, you can turn it off using this button.
 However, this will also disable the **Fragment Rotation Mode** and **Measurement Mode** button since they are part of the hand menu functionality.
 
@@ -49,7 +49,7 @@ This button switches the application's language between German and English.
 
 ## Cooperation settings
 
-<img src="/images/manual/1.1.0/coop_settings.png" alt="Cooperation Settings Menu" class="mx-auto max-w-md" />
+![Cooperation Settings Menu](manual/coop_settings.png)
 
 In cooperation mode, a box and a ray are rendered around the head of every user to indicate where they are and where they are looking.
 If you find this behaviour distracting, you can turn each of the functionalities off.
@@ -58,7 +58,7 @@ You may also decide whether measurements made on your device should be transmitt
 
 ## Visual Settings
 
-<img src="/images/manual/1.1.0/visual_settings.png" alt="Visual Settings Menu" class="mx-auto max-w-md" />
+![Visual Settings Menu](manual/visual_settings.png)
 
 ### Gaze highlighting
 chARpack utilizes the eye tracking capabilities of the device to highlight the atom the user is currently looking at.
@@ -87,7 +87,7 @@ chARpack support multiple different color schemes that change the background col
 
 ## Integration method
 
-<img src="/images/manual/1.1.0/integration_method.png" alt="Integration Method Menu" class="mx-auto max-w-md" />
+![Integration Method Menu](manual/integration_method.png)
 
 The integration method is the method used for numerical integration in force field computations.
 You can choose between:

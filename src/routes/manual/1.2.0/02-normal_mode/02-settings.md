@@ -5,7 +5,7 @@ The settings menu is divided into multiple tabs.
 
 ## General Settings
 
-<img src="/images/manual/1.2.0/settings_menu.png" alt="Settings Menu" class="mx-auto max-w-md" />
+![Settings Menu](manual/settings_menu.png)
 
 ### Bond stiffness
 The bond stiffness parameter changes the number of force field iterations and therefore the perceived stiffness of the molecule.
@@ -48,14 +48,14 @@ This button toggles chARpacks post processing effects like cartoon-style shading
 
 ## Hand Settings
 
-<img src="/images/manual/1.2.0/hand_settings_menu.png" alt="Hand Settings Menu" class="mx-auto max-w-md" />
+![Hand Settings Menu](manual/hand_settings_menu.png)
 
 ### Toggle Hand Ray
 To point more precisely at far away objects, a dashed ray can be rendered from the tip of your index finger in the direction you're pointing.
 By default, this behaviour is turned off.
 
 ### Toggle Hand Menu
-This button enables or disables use of the <a href="/manual/master/02-normal_mode/01-hand-menu">hand menu</a>.
+This button enables or disables use of the [Hand Menu](xref:02-normal_mode/01-hand-menu).
 By default, the menu is enabled for user comfort; if you prefer not using it, you can turn it off using this button.
 However, this will also disable the **Fragment Rotation Mode** and **Measurement Mode** button since they are part of the hand menu functionality.
 
@@ -65,7 +65,7 @@ If you are left-handed or would simply prefer using the hand menu with your left
 
 ## Cooperation Settings
 
-<img src="/images/manual/1.2.0/coop_settings.png" alt="Cooperation Settings Menu" class="mx-auto max-w-md" />
+![Cooperation Settings Menu](manual/coop_settings.png)
 
 In cooperation mode, a box and a ray are rendered around the head of every user to indicate where they are and where they are looking.
 If you find this behaviour distracting, you can turn each of the functionalities off.
@@ -74,7 +74,7 @@ You may also decide whether measurements made on your device should be transmitt
 
 ## Visual Settings
 
-<img src="/images/manual/1.2.0/visual_settings.png" alt="Visual Settings Menu" class="mx-auto max-w-md" />
+![Visual Settings Menu](manual/visual_settings.png)
 
 ### Gaze highlighting
 chARpack utilizes the eye tracking capabilities of the device to highlight the atom the user is currently looking at.
@@ -103,7 +103,7 @@ chARpack support multiple different color schemes that change the background col
 
 ## Integration Method
 
-<img src="/images/manual/1.2.0/integration_method.png" alt="Integration Method Menu" class="mx-auto max-w-md" />
+![Integration Method Menu](manual/integration_method.png)
 
 The integration method is the method used for numerical integration in force field computations.
 You can choose between:
