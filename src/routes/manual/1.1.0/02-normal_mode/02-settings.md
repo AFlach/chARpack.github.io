@@ -36,7 +36,7 @@ To point more precisely at far away objects, a dashed ray can be rendered from t
 By default, this behaviour is turned off.
 
 ### Toggle Hand Menu
-This button enables or disables use of the <a data-sveltekit-reload href="/manual/1.1.0/02-normal_mode/01-hand-menu">hand menu</a>.
+This button enables or disables use of the <a href="/manual/1.1.0/02-normal_mode/01-hand-menu">hand menu</a>.
 By default, the menu is enabled for user comfort; if you prefer not using it, you can turn it off using this button.
 However, this will also disable the **Fragment Rotation Mode** and **Measurement Mode** button since they are part of the hand menu functionality.
 

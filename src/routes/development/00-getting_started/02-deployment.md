@@ -75,7 +75,7 @@ Select **Install**. Once the installation is finished, you can access the chARpa
 
 ## Deploy on Meta Quest 2 & 3
 If you want to deploy the app to a Meta Quest device, switch your **Build Platform** to **Android** in the Build Settings.
-You can either directly build and deploy on to device or build an `.apk` file which you can deploy manually via the <a href="https://developer.oculus.com/downloads/package/oculus-developer-hub-win" target="_blank">Meta Quest Developer Hub</a>.
+You can either directly build and deploy on to device or build an `.apk` file which you can deploy manually via the <a href="https://developer.oculus.com/downloads/package/oculus-developer-hub-win" target="_blank" rel="noreferrer">Meta Quest Developer Hub</a>.
 In any case you should download the Developer Hub to activate the **Developer Mode** on your device.
 If the Developer Mode is already activated and your device is connected via USB to the PC that runs Unity, then your Meta Quest device should show up in the Build Settings in the **Run Device** list.
 From here you can **Build and Run** to directly upload the software to your device.

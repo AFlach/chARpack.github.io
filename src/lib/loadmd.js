@@ -78,7 +78,7 @@ export function loadFullTreeManual() {
 
         newPages.push(page);
 
-        //console.log(page);
+        console.log(page);
     });
 
     //console.log(newPages);

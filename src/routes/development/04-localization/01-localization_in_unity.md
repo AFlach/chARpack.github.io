@@ -4,7 +4,7 @@ title: Unity's localization features
 
 ## General
 Unity offers built-in support for multi-language interfaces.
-For further information and guides, check the <a href="https://docs.unity3d.com/Packages/com.unity.localization@1.3/manual/Installation.html" target="_blank">official documentation</a>.
+For further information and guides, check the <a href="https://docs.unity3d.com/Packages/com.unity.localization@1.3/manual/Installation.html" target="_blank" rel="noreferrer">official documentation</a>.
 In this localization section of the development guide we discuss the implementation of localization into chARpack.
 
 ## Adding locales

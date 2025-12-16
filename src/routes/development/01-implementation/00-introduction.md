@@ -8,7 +8,7 @@ In this development guide we explain the fundamental implementation details abou
 
 ## Overview
 
-For a short introduction to the Unity functionalities most commonly used in this project, have a look at our small introduction <a data-sveltekit-reload href="/development/01-implementation/01-unity">Using Unity</a>.
+For a short introduction to the Unity functionalities most commonly used in this project, have a look at our small introduction <a href="/development/01-implementation/01-unity">Using Unity</a>.
 
 ### Important scripts
 chARpack is built using many scripts for specific purposes (e.g. a settings script for the settings menu).
@@ -29,7 +29,7 @@ The *prefabs* folder contains a few useful prefabs.
 Besides the basics like **Atom** and **Bond**, there are also some that are more generally useful.
 The prefabs are organized by categories; for example, you can find the **MainMenu** prefab in `client_ui` and `server_ui` contains two-dimensional canvas-based UI elements as they are used in the server scene.
 
-To use a prefab, you only need to instantiate it and assign a method (see the <a data-sveltekit-reload href="/development/04-localization/02-example">button creation example</a> for more details).
+To use a prefab, you only need to instantiate it and assign a method (see the <a href="/development/04-localization/02-example">button creation example</a> for more details).
 
 There are also prefabs for the different types of menus, tooltips and more.
 

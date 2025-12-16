@@ -18,7 +18,7 @@ Here, you have the option to pick a supported output format (by adding the corre
 
 ## Creating Molecules
 Pressing the **C** key on your keyboard activates a text input field. 
-Entering any valid element symbol or <a href="https://de.wikipedia.org/wiki/Simplified_Molecular_Input_Line_Entry_System" target="_blank">SMILES</a> string and pressing the **Enter** key creates the specified molecule.
+Entering any valid element symbol or <a href="https://de.wikipedia.org/wiki/Simplified_Molecular_Input_Line_Entry_System" target="_blank" rel="noreferrer">SMILES</a> string and pressing the **Enter** key creates the specified molecule.
 
 <img src="/images/manual/1.1.0/server_molecule_creation.png" alt="Creating molecules on the server" class="mx-auto max-w-md" />
 
