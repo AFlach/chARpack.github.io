@@ -54,7 +54,7 @@ Alternatively, if you want to choose a key name for your new localized string (b
 Simply right-click on the **TextMeshPro** or **TextMeshProUGUI** component you want to localize and select *Localize Property* in the menu that appears.
 This will add a **GameObjectLocalizer** component to your object, which contains all the relevant localization information, such as which text or UI object is tracked by the localization system.
 
-![Game Object Localizer {class="mx-auto max-w-xl"}](/images/development/game_object_localizer.png)
+![Game Object Localizer](/images/development/game_object_localizer.png){.mx-auto .max-w-xl}
 
 In this component, you can choose which entry from which localization table you would like to use, as well as directly edit its translations.
 Here, you can either choose an existing localized string that fits your purposes or create a new one with new translations by selecting `My Strings` as the *Table Collection* and then pressing *Add Table Entry*.

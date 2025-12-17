@@ -24,7 +24,7 @@ the way molecules respond when grabbed or clicked and their interactions with th
 ### Prefabs
 The *prefabs* folder contains a few useful prefabs. 
 
-![Prefabs {class="mx-auto max-w-xl"}](/images/development/prefab.png)
+![Prefabs](/images/development/prefab.png){.mx-auto .max-w-xl}
 
 Besides the basics like **Atom** and **Bond**, there are also some that are more generally useful.
 The prefabs are organized by categories; for example, you can find the **MainMenu** prefab in `client_ui` and `server_ui` contains two-dimensional canvas-based UI elements as they are used in the server scene.
@@ -37,7 +37,7 @@ There are also prefabs for the different types of menus, tooltips and more.
 The project currently contains three different scenes for separate purposes.
 
 #### Main Scene
-![Main Scene {class="mx-auto max-w-xl" width="600"}](/images/development/main_scene.png)
+![Main Scene](/images/development/main_scene.png){.mx-auto .max-w-xl}
 
 This scene provides all the features that are available on the AR device.
 However, some functions are only featured on the server.
@@ -45,13 +45,13 @@ However, some functions are only featured on the server.
 If you are currently editing something that happens during runtime, you will most likely test it by running the **Main Scene**.
 
 #### Login Scene
-![Login Scene {class="mx-auto max-w-xl" width="600"}](/images/development/login_scene.png)
+![Login Scene](/images/development/login_scene.png){.mx-auto .max-w-xl}
 
 The **Login Scene** is normally only used for a short time during runtime: when starting chARpack.
 It provides the interface for connecting to a server for collaboration, accessing the debug log, or scanning a QR code and entering the **Main Scene**.
 
 #### Server Scene
-![Server Scene {class="mx-auto max-w-xl" width="600"}](/images/development/server_scene.png)
+![Server Scene](/images/development/server_scene.png){.mx-auto .max-w-xl}
 
 The **Server Scene** contains the framework for collaboration and is the central node for any network traffic.
 In addition, it manages network connections, tracks interactions in the atom world and broadcasts them to other users to keep collaborators synchronized.

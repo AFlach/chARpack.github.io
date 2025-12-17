@@ -89,7 +89,7 @@ For now, you can click **Ignore** and continue with the installation process.
 Drag-and-drop the `.unitypackage` into the **Project** section of your Unity window to install it.
 A pop-up should open and shows you the files that will be added to the project, click **Import**.
 This should add a **NuGet** option to the menu bar of Unity.
-![Nuget {class="mx-auto max-w-xl"}](/images/development/nuget_menu_bar.png)
+![Nuget](/images/development/nuget_menu_bar.png){.mx-auto .max-w-xl}
 
 > Note: If the NuGet option is not available right away, simply close and reload the project.
 
@@ -115,7 +115,7 @@ File > Build Profiles
 
 Select the option **Universal Windows Platform** on the left and click on **Switch Platform**.
 
-![Switch Platform {class="mx-auto max-w-xl"}](/images/development/switch_platform.png)
+![Switch Platform](/images/development/switch_platform.png){.mx-auto .max-w-xl}
 
 Make sure that, when building for Universal Windows, the LoginScreenScene and the MainScene are checked in the scene list. 
 Conversely, when building the standalone desktop application, make sure only the ServerScene is checked here.

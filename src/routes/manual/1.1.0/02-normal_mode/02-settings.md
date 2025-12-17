@@ -2,7 +2,7 @@
 title: Settings
 ---
 
-![Settings Menu](manual/settings_menu.png)
+![Settings Menu](settings_menu.png)
 
 All toggle buttons in the settings are equipped with a colored square indicating whether they are currently set to "on" or "off".
 
@@ -25,7 +25,7 @@ This mode comes in handy when creating a bond within a molecule where the force 
 ## Hand Settings
 The **Hand Settings** button opens (or closes) a submenu containing settings related to the user's hands.
 
-![Settings Menu](manual/settings_menu.png)
+![Settings Menu](settings_menu.png)
 
 ### Hand Visual Toggles
 The first two buttons change the hand visuals.
@@ -49,7 +49,7 @@ This button switches the application's language between German and English.
 
 ## Cooperation settings
 
-![Cooperation Settings Menu](manual/coop_settings.png)
+![Cooperation Settings Menu](coop_settings.png)
 
 In cooperation mode, a box and a ray are rendered around the head of every user to indicate where they are and where they are looking.
 If you find this behaviour distracting, you can turn each of the functionalities off.
@@ -58,7 +58,7 @@ You may also decide whether measurements made on your device should be transmitt
 
 ## Visual Settings
 
-![Visual Settings Menu](manual/visual_settings.png)
+![Visual Settings Menu](visual_settings.png)
 
 ### Gaze highlighting
 chARpack utilizes the eye tracking capabilities of the device to highlight the atom the user is currently looking at.
@@ -87,7 +87,7 @@ chARpack support multiple different color schemes that change the background col
 
 ## Integration method
 
-![Integration Method Menu](manual/integration_method.png)
+![Integration Method Menu](integration_method.png)
 
 The integration method is the method used for numerical integration in force field computations.
 You can choose between:

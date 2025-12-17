@@ -20,7 +20,7 @@ Here, you have the option to pick a supported output format (by adding the corre
 Pressing the **C** key on your keyboard activates a text input field. 
 Entering any valid element symbol or [SMILES](https://de.wikipedia.org/wiki/Simplified_Molecular_Input_Line_Entry_System) string and pressing the **Enter** key creates the specified molecule.
 
-![Molecule Creation](manual/server_molecule_creation.png)
+![Molecule Creation](server_molecule_creation.png)
 
 Pressing the **Clear** button at the bottom of the screen deletes all molecules in the scene.
 
@@ -37,12 +37,12 @@ Whole molecules can also be selected by clicking on a corner of their bounding b
 
 Tooltips can be dragged around the screen on the top bar or collapsed to save space.
 
-![Server Tooltip](manual/server_tooltip.png)
+![Server Tooltip](server_tooltip.png)
 
 ### Structure formulas
 When selecting a whole molecule, the tooltip offers the additional option to generate a structure formula for the molecule using a Python library.
 
-![Structure Formula](manual/structure_formula.png)
+![Structure Formula](structure_formula.png)
 
 The structure formula window can be dragged (similar to the tooltip) or resized using the indicated corners.
 Atoms can be selected within the structure formula (turquoise) or within the molecule (default selection colors).
@@ -61,4 +61,4 @@ You can switch to similar Gizmos for rotating or scaling the molecule by pressin
 There are more shortcuts available to perform specific actions on the server. 
 Hovering your mouse over the *Info* icon in the top right corner shows you a list of them.
 
-![Info panel](manual/info_panel.png)
+![Info panel](info_panel.png)

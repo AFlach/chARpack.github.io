@@ -7,7 +7,7 @@ After turning on the server, putting up the QR code and scanning it, you're fina
 In the login screen press the button **Connect**.
 If there is a number in the brackets behind the text **Connect**, the chances are high that your server is already listed.
 
-![Server List](manual/server_list.png)
+![Server List](server_list.png)
 
 In the picture you can see an example of the server list.
 Here, two servers are detected in the network.
@@ -24,4 +24,4 @@ Pressing **OK** on this dialog will put you back in the login screen.
 ### Network settings
 The settings button at the top  of the server list lets you edit the different ports as well as the network protocol to use.
 
-![Network Settings](manual/network_settings.png)
+![Network Settings](network_settings.png)

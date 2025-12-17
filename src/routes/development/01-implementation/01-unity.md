@@ -15,7 +15,7 @@ Unity has two basic modes: **editor mode** and **game mode**.
 ## The Unity editor
 The layout of the Unity editor can be confusing at first, so a short overview might be useful:
 
-![Unity Editor {class="mx-auto max-w-xl"}](/images/development/unity_editor.png)
+![Unity Editor](/images/development/unity_editor.png){.mx-auto .max-w-xl}
 
 1. **Command bar**
 You can find project settings and build options, create game objects, define preferences and much more from this bar.
@@ -26,7 +26,7 @@ You can navigate the current scene in this view. It shows a lot more detail than
 **Box colliders** are used to detect when an object "collides" with something else, for example when the player touches it.
 Also, you can directly change the position, scale and rotation of objects in this view.
 
-![Scene View {class="mx-auto max-w-xl"}](/images/development/scene_view.png)
+![Scene View](/images/development/scene_view.png){.mx-auto .max-w-xl}
 
 4. **Game view**
 In editor mode, this window does basically nothing, however in game mode, this is where the game runs and you can test user input.

@@ -5,7 +5,7 @@ The settings menu is divided into multiple tabs.
 
 ## General Settings
 
-![Settings Menu](manual/settings_menu.png)
+![Settings Menu](settings_menu.png)
 
 ### Bond stiffness
 The bond stiffness parameter changes the number of force field iterations and therefore the perceived stiffness of the molecule.
@@ -48,7 +48,7 @@ This button toggles chARpacks post processing effects like cartoon-style shading
 
 ## Hand Settings
 
-![Hand Settings Menu](manual/hand_settings_menu.png)
+![Hand Settings Menu](hand_settings_menu.png)
 
 ### Toggle Hand Ray
 To point more precisely at far away objects, a dashed ray can be rendered from the tip of your index finger in the direction you're pointing.
@@ -65,7 +65,7 @@ If you are left-handed or would simply prefer using the hand menu with your left
 
 ## Cooperation Settings
 
-![Cooperation Settings Menu](manual/coop_settings.png)
+![Cooperation Settings Menu](coop_settings.png)
 
 In cooperation mode, a box and a ray are rendered around the head of every user to indicate where they are and where they are looking.
 If you find this behaviour distracting, you can turn each of the functionalities off.
@@ -74,7 +74,7 @@ You may also decide whether measurements made on your device should be transmitt
 
 ## Visual Settings
 
-![Visual Settings Menu](manual/visual_settings.png)
+![Visual Settings Menu](visual_settings.png)
 
 ### Gaze highlighting
 chARpack utilizes the eye tracking capabilities of the device to highlight the atom the user is currently looking at.
@@ -103,7 +103,7 @@ chARpack support multiple different color schemes that change the background col
 
 ## Integration Method
 
-![Integration Method Menu](manual/integration_method.png)
+![Integration Method Menu](integration_method.png)
 
 The integration method is the method used for numerical integration in force field computations.
 You can choose between:

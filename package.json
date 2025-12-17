@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "prebuild": "node src/lib/copy-images.js",
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
@@ -35,6 +36,7 @@
   },
   "type": "module",
   "dependencies": {
+    "remark-attrs": "^1.0.0",
     "unist-util-visit": "^5.0.0"
   }
 }
