@@ -19,7 +19,6 @@ The button below it in the left toolbar opens a small settings menu.
 If you are stuck on any task, the **?** button can give you hints on what you need to do.
 The eye button on the bottom center can be used to hide the tutorial window; if you want to show it again, use the **Hide/Show Tutorial** button of the server scene.
 
-
 The main tutorial contents are dependent on the exact tutorial you are using; they usually consist of a list of subtasks that need to be completed.
 Each subtask is marked by an exclamation mark, whereas the text in between gives some additional information or structure.
 If subtasks need to be completed in a specific order, all subtasks after the currently active one are greyed out.

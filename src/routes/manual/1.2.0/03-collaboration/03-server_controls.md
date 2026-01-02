@@ -33,7 +33,7 @@ Choosing your desired settings and pressing the **Save** button in the menu upda
 In the server scene, molecules can be interacted with using the mouse in a similar way to the AR environment.
 Clicking on an atom highlights it and displays a tooltip with information. 
 Subsequent clicks on connected atoms display information about bonds, angles and torsion terms.
-Whole molecules can also be selected by clicking on a corner of their bounding box.
+In order to select a full molecule, simply select any of its atoms and then press **Ctrl + A**.
 
 Tooltips can be dragged around the screen on the top bar or collapsed to save space.
 
