@@ -3,7 +3,7 @@ import mdsvexConfig from "./mdsvex.config.js";
 import preprocess from "svelte-preprocess";
 import adapter from "@sveltejs/adapter-static";
 
-const manualVersions = ['master', '1.1.0'];
+const manualVersions = ['master', '1.1.0', '1.2.0'];
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
