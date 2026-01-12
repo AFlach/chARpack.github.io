@@ -12,7 +12,7 @@ File > Build Profiles
 
 This time, click on **Build**, which opens a folder dialog.
 
-![Build](/images/development/build.png){.mx-auto .max-w-xl}
+![Build $class="mx-auto max-w-xl"](/images/development/build.png)
 
 Create a folder named **build** inside the chARpack project folder and select it using the dialog.
 Unity should start the **Building Player** process.
@@ -29,11 +29,11 @@ In some cases reinstalling VS helps.
 However, if you do not want to reinstall VS or this simply does not help, you have to deactivate the **Burst** compiler.
 Go to the **Player Settings**
 
-![Project Settings](/images/development/project_settings.png){.mx-auto .max-w-xl}
+![Project Settings $class="mx-auto max-w-xl"](/images/development/project_settings.png)
 
 Find the section **Burst AOT Settings** and undo the checkmark on **Enable Burst Compilation**.
 
-![Burst](/images/development/burst.png){.mx-auto .max-w-xl}
+![Burst $class="mx-auto max-w-xl"](/images/development/burst.png)
 
 ### IP of your HoloLens2
 To be able to deploy chARpack via WiFi, you need to connect your machine that runs Unity to the same network (or a reachable network) as the HoloLens2.
@@ -62,7 +62,7 @@ Now you're ready to use chARpack.
 Right click **chARpack (Universal Windows)** in the solution explorer and go to *Publish > Create App Packages*.
 In the following dialogue, make sure you have selected the same configuration and platform as earlier. For all other options, the default settings are usually fine.
 
-![AppPackage](/images/development/app_package.png){.mx-auto .max-w-xl}
+![AppPackage $class="mx-auto max-w-xl"](/images/development/app_package.png)
 
 Click **Create** and wait for the build to finish.
 

@@ -1,8 +1,5 @@
 import { defineMDSveXConfig as defineConfig } from "mdsvex";
-//import { remarkXref } from './src/lib/remark-xref.js';
-//import { remarkImages } from './src/lib/remark-img.js';
-//import { remarkExternalLinks } from './src/lib/remark-extref.js';
-import remarkAttrsIgnoreCode from './src/lib/remark-attrs-ignore-code.js'
+import remarkCustom from './src/lib/remark-custom.js';
 
 
 const config = defineConfig({
@@ -12,9 +9,7 @@ const config = defineConfig({
     dashes: "oldschool",
   },
 
-  remarkPlugins: [
-    remarkAttrsIgnoreCode
-  ],
+  remarkPlugins: [remarkCustom],
   rehypePlugins: [],
 });
 

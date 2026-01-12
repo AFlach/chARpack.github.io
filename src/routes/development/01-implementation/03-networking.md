@@ -44,7 +44,7 @@ The arguments for the method are going to be the same as you used in the *EventM
 The **AddXYZ** method is a placeholder for things such as **AddUShort** and **AddVector3** (these are implemented for all the most common types of data you may need to send).
 Use as many *Add* methods as you need for your arguments; note that the order in which you add the arguments will later be important for interpretation on the server side.
 
-In order for your new network message to be sent when an event happens, add the line <code>EventManager.Singleton.OnNewEventHappened += sendNewAction;</code> to the **Start** method.
+In order for your new network message to be sent when an event happens, add the line `EventManager.Singleton.OnNewEventHappened += sendNewAction;` to the **Start** method.
 
 You also need to implement a corresponding listener so the client can interpret a message from the server correctly.
 Add a new method to the *Listen* section:
@@ -83,7 +83,7 @@ public void bcastNewEventHappened(.../*some arguments*/)
     Server.SendToAll(message);
 }
 ```
-Then add a line to the **Start** method so the network event is triggered at the appropriate time: <code>EventManager.Singleton.OnNewEventHappened += bcastNewEventHappened;</code>
+Then add a line to the **Start** method so the network event is triggered at the appropriate time: `EventManager.Singleton.OnNewEventHappened += bcastNewEventHappened;`
 
 Now add a new method to the *MessageHandler* section: 
 ```csharp

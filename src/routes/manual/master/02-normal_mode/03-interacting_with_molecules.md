@@ -47,7 +47,7 @@ The atom you're grabbing will be fixed in place and you can rotate the fragment 
 By default, this interaction mode is inactive.
 You can toggle the behaviour by pressing the **Fragment Rotation Mode** button in your left palm.
 
-[Fragment Rotation Mode](fragment_rotation.gif)
+![Fragment Rotation Mode](fragment_rotation.gif)
 
 ## Measurement Mode
 In **Measurement Mode** you can measure the distance or the angle between specific atoms that can also be from two different molecules.

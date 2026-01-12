@@ -69,43 +69,6 @@ Click **Get Features** and confirm that step by clicking **Import**.
 
 ### OpenBabel and NuGet
 In the current version of chARpack, OpenBabel and NuGet should automatically be downloaded and installed if it is not already found on the system.
-<!-- If this is unsuccessful for some reason, you may need to perform a manual installation:
-
-For server support of OpenBabel please install the <a href="https://github.com/openbabel/openbabel/releases/latest" target="_blank">latest</a> version (x64 exe).
-Take the `OBDotNet.dll` from the OpenBabel install directory and copy it into `Assets/plugins`.
-If your system if having trouble to detect all necessary DLLs, check if the OpenBabel install path is added to your `PATH`.
-On Windows go to "Edit the system environment variables"; under "Environment Variables..." add the OpenBabel install path to your "Path" variable in the system variables.
-On Linux add the OpenBabel install path to your `PATH` variable. -->
-
-<!-- ### NuGet
-Download the file `NuGetForUnity.*.unitypackage` from the latest release of <a href="https://github.com/GlitchEnzo/NuGetForUnity/releases/latest" target="_blank" rel="noreferrer">NuGet for Unity</a> (Note: Look for the release page of that project, no need to clone the source tree).
-To be able to install the `.unitypackage` file of **NuGetForUnity** you have to start the project for the first time.
-
-> Go to UnityHub and single click the project to start it.
-
-This process can take a while.
-During the startup Unity will show you an error message, since not all components are installed yet.
-For now, you can click **Ignore** and continue with the installation process.
-Drag-and-drop the `.unitypackage` into the **Project** section of your Unity window to install it.
-A pop-up should open and shows you the files that will be added to the project, click **Import**.
-This should add a **NuGet** option to the menu bar of Unity.
-![Nuget](/images/development/nuget_menu_bar.png){.mx-auto .max-w-xl}
-
-> Note: If the NuGet option is not available right away, simply close and reload the project.
-
-In case Unity still complains about missing packages, please check the NuGet package manager and verify the installation of the following packages.
-Click on 
-```
-NuGet > Manage NuGet Packages
-```
-to open the package manager.
-In the search bar type in the following packages one by one and install them
-```
-MathNet.Numerics
-Microsoft.MixedReality.QR
-Microsoft.VCRTForwarders.140
-pythonnet
-``` -->
 
 ### UWP
 Next, go to the menu bar of Unity and click
@@ -115,7 +78,7 @@ File > Build Profiles
 
 Select the option **Universal Windows Platform** on the left and click on **Switch Platform**.
 
-![Switch Platform](/images/development/switch_platform.png){.mx-auto .max-w-xl}
+![Switch Platform $class="mx-auto max-w-xl"](/images/development/switch_platform.png)
 
 Make sure that, when building for Universal Windows, the LoginScreenScene and the MainScene are checked in the scene list. 
 Conversely, when building the standalone desktop application, make sure only the ServerScene is checked here.

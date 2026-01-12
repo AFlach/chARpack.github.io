@@ -43,7 +43,7 @@ opening a debug log for troubleshooting:
 
 Similar to the functions of the **Login Menu** the debug log has a follow me function and can be placed by grabbing the top bar.
 
-![Debug Log](debug_log.png){.mx-auto .max-w-sm}
+![Debug Log $class="mx-auto max-w-sm"](debug_log.png)
 
 The button at the top left toggles a frame rate counter; when active, it is positioned in a comfortable location for AR purposes.
 This can be useful if you are experiencing performance issues.

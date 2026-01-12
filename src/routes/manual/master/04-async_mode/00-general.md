@@ -21,7 +21,7 @@ You should now be in an environment without any menus or buttons. This way, you 
 
 To scan your screen, you will need to touch three of its corners in the following order: lower left, then upper left, then upper right.
 
-![Screen scan instructions](scan_screen_instructions.png){.mx-auto .max-w-xl}
+![Screen scan instructions $class="mx-auto max-w-xl"](scan_screen_instructions.png)
 
 Each touch needs to be performed with your index finger; try to keep it as still on the corner as possible. Once the corner has been
 successfully registered, you should hear a ringing sound and a small cube should appear at approximately the position of the corner.
