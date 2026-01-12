@@ -26,6 +26,6 @@
 	<Heading tag="h3" class="mt-6 mb-2">About</Heading>
 	<P>
 		This project is part of the <A href="https://www.simtech.uni-stuttgart.de/exc/">Cluster of Excellence EXC 2075 "Data-Integrated Simulation Science (SimTech)"</A> of the <A href="https://www.uni-stuttgart.de/">University of Stuttgart</A>.
-		The development of chARpack is a joint effort of the <A href="https://www.itheoc.uni-stuttgart.de/">Institute for Theoretical Chemistry</A> and the <A href="https://www.visus.uni-stuttgart.de/">Institute for Visualization and Interactive Systems</A>.
+		The development of chARpack is a joint effort of the <A href="https://www.itheoc.uni-stuttgart.de/">Institute for Theoretical Chemistry</A> and the <A href="https://www.visus.uni-stuttgart.de/">Institute for Visualization and Interactive Systems.</A>
 	</P>
 </div>

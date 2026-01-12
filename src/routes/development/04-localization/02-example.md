@@ -8,8 +8,7 @@ The project contains many menu prefabs from which you can copy a single button; 
 Alternatively, you can use the search field in the *Project* section and for example type *button* in the search field.
 Make sure the search is executed in the whole project and not only in *Assets*.
 
-Choose a type of button and instantiate it.
-Either directly in the Scene/prefab you are working on or via the *Instantiate* method within a script.
+Choose a type of button and instantiate it, either directly in the Scene/prefab you are working on or via the *Instantiate* method within a script.
 
 ## Adding method listeners and icons
 Some of the prefabs already have icons that correspond to their purpose.
