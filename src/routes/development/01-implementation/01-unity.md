@@ -15,7 +15,7 @@ Unity has two basic modes: **editor mode** and **game mode**.
 ## The Unity editor
 The layout of the Unity editor can be confusing at first, so a short overview might be useful:
 
-<img src="/images/development/unity_editor.png" alt="Unity Editor" class="mx-auto max-w-xl" />
+![Unity Editor $class="mx-auto max-w-xl"](/images/development/unity_editor.png)
 
 1. **Command bar**
 You can find project settings and build options, create game objects, define preferences and much more from this bar.
@@ -26,7 +26,7 @@ You can navigate the current scene in this view. It shows a lot more detail than
 **Box colliders** are used to detect when an object "collides" with something else, for example when the player touches it.
 Also, you can directly change the position, scale and rotation of objects in this view.
 
-<img src="/images/development/scene_view.png" alt="Scene View" class="mx-auto max-w-xl" />
+![Scene View $class="mx-auto max-w-xl"](/images/development/scene_view.png)
 
 4. **Game view**
 In editor mode, this window does basically nothing, however in game mode, this is where the game runs and you can test user input.
@@ -53,7 +53,7 @@ Each created script is initialized as a child of a **Unity** specific class call
 For details on the components of this class see the [`MonoBehaviour`](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html) in the official documentation.
 
 Unity uses C# (C Sharp) as a programming language.
-If you followed the described installation process, **Visual Studio 2019 Community Edition** should already be installed on your computer, as well as the modules **Game development with Unity** and **Universal Windows Platform development** (or *Universal Platform Tools* from the **WinUI Application Development** module in Visual Studio 17.10 or later). We recommend using it as your code editor.
+If you followed the described installation process, **Visual Studio 2022 Community Edition** should already be installed on your computer, as well as the modules **Game development with Unity** and **Universal Windows Platform development** (or *Universal Platform Tools* from the **WinUI Application Development** module in Visual Studio 17.10 or later). We recommend using it as your code editor.
 Double click on a script in the Project view to open it in your editor.
 
 Any script intended to work with Unity needs the line 

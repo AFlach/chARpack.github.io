@@ -13,7 +13,7 @@ entry at all) in the string table. To fix this, open `IconAndText > TextMeshPro`
 At the bottom, you should find the *Game Object Localizer* component.
 
 Example usage of the *Game Object Localizer* component on the **Create Atom**:
-<img src="/images/development/game_object_localizer.png" alt="Game Object Localizer" class="mx-auto max-w-xl" />
+![Game Object Localizer $class="mx-auto .max-w-xl"](/images/development/game_object_localizer.png)
 
 When this issue occurs, the *Text* field usually points to **None**, meaning the *Entry* field (nested under *Text*) is empty.
 The problem is fixed by clicking on the drop-down menu next to *Text* and explicitly selecting the string table entry corresponding to your object.

@@ -7,10 +7,10 @@ In this mode, the camera shows the scene in an orthographic instead of a perspec
 Activating this mode automatically turns off the force field; you can manually reactivate it in the settings.
 
 The normal three-dimensional visualization:
-<img src="/images/manual/master/3d_mode.png" alt="3D Mode" class="mx-auto max-w-md"/>
+![3D Mode](3d_mode.png)
 
 Looks like this when 2D mode is activated:
-<img src="/images/manual/master/2d_mode.png" alt="2D Mode" class="mx-auto max-w-md"/>
+![2D Mode](2d_mode.png)
 
 You can also morph molecules in 2D mode from their structure formula representation to a normal 3D representation while staying in orthographic view. 
 To do this, open the debug console (see the **Info** panel for the keyboard shortcut) and enter *morphMol3D* to morph to 3D or *morphMol2D* to morph back to structure formula representation.

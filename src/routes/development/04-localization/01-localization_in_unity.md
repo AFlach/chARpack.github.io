@@ -4,7 +4,7 @@ title: Unity's localization features
 
 ## General
 Unity offers built-in support for multi-language interfaces.
-For further information and guides, check the <a href="https://docs.unity3d.com/Packages/com.unity.localization@1.3/manual/Installation.html" target="_blank" rel="noreferrer">official documentation</a>.
+For further information and guides, check the [official documentation](https://docs.unity3d.com/Packages/com.unity.localization@1.3/manual/Installation.html).
 In this localization section of the development guide we discuss the implementation of localization into chARpack.
 
 ## Adding locales
@@ -28,7 +28,7 @@ Under the tab *Edit Table Collection* you can find the already existing tables.
 With the drop-down menu *Selected Table Collection* you switch between the tables.
 *Elements* contains the names of all atoms that can be instantiated, *My Strings* contains everything else.
 
-<img src="/images/development/locale_tables.png" alt="Locale Tables" class="mx-auto max-w-xl" />
+![Locale Tables $class="mx-auto .max-w-xl"](/images/development/locale_tables.png)
 
 To add content, select **Add new entry** and enter translations for each locale as well as a unique key.
 In most cases, e.g. if you are only translating a single word, the simplest way is to use the English word as the key.

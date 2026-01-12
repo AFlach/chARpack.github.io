@@ -7,7 +7,7 @@ The **Normal Mode** is the standard working environment of chARpack.
 Here you can build and change molecules, inspect and manipulate structures and load and save data.
 Below the main menu of the normal mode is shown.
 
-<img src="/images/manual/master/normal_mode_menu.png" alt="Normal Mode Menu" class="mx-auto max-w-md" />
+![Normal Mode Menu](normal_mode_menu.png)
 
 Similar to the **Login Menu** you can toggle the follow me mode using the **Pin Button**.
 The button **Exit** brings you back to the login screen.
@@ -27,7 +27,7 @@ The **Clear All Measurements** button deletes all distance and angle measurement
 Pressing the **Create Atom** Button spawns a scrollable atom menu at a fixed position within your current view.
 This menu can be navigated using the up and down arrows to the right; pressing a button within this menu creates a new atom of the chosen type.
 
-<img src="/images/manual/master/atom_menu.png" alt="Atom Menu" class="mx-auto max-w-md" />
+![Atom Menu](atom_menu.png)
 
 Atoms are created with dummies attached.
 These dummies are used to create bonds or to be switched out for Hydrogen atoms.

@@ -7,7 +7,7 @@ After turning on the server, putting up the QR code and scanning it, you're fina
 In the login screen press the button **Connect**.
 If there is a number in the brackets behind the text **Connect**, the chances are high that your server is already listed.
 
-<img src="/images/manual/master/server_list.png" alt="Debug Log" class="mx-auto max-w-md" />
+![Debug Log](server_list.png)
 
 In the picture you can see an example of the server list.
 Here, two servers are detected in the network.

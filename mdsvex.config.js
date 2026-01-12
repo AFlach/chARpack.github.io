@@ -1,4 +1,6 @@
 import { defineMDSveXConfig as defineConfig } from "mdsvex";
+import remarkCustom from './src/lib/remark-custom.js';
+
 
 const config = defineConfig({
   extensions: [".svelte.md", ".md", ".svx"],
@@ -7,7 +9,7 @@ const config = defineConfig({
     dashes: "oldschool",
   },
 
-  remarkPlugins: [],
+  remarkPlugins: [remarkCustom],
   rehypePlugins: [],
 });
 

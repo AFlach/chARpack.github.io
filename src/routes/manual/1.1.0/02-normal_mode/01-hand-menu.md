@@ -5,7 +5,7 @@ title: Hand Menu
 ## Overview
 The hand menu provides a fast and comfortable way to create atoms by attaching an atom selection menu to the user's hand.
 
-<img src="/images/manual/1.1.0/hand_menu.gif" alt="Hand Menu" class="mx-auto max-w-md" />
+![Hand Menu](hand_menu.gif)
 
 ### Usage
 The hand menu can be opened by turning the flat palm of your left hand towards your face.

@@ -12,7 +12,7 @@ File > Build Profiles
 
 This time, click on **Build**, which opens a folder dialog.
 
-<img src="/images/development/build.png" alt="Build" class="mx-auto max-w-xl" />
+![Build $class="mx-auto max-w-xl"](/images/development/build.png)
 
 Create a folder named **build** inside the chARpack project folder and select it using the dialog.
 Unity should start the **Building Player** process.
@@ -29,11 +29,11 @@ In some cases reinstalling VS helps.
 However, if you do not want to reinstall VS or this simply does not help, you have to deactivate the **Burst** compiler.
 Go to the **Player Settings**
 
-<img src="/images/development/project_settings.png" alt="Project Settings" class="mx-auto max-w-xl" />
+![Project Settings $class="mx-auto max-w-xl"](/images/development/project_settings.png)
 
 Find the section **Burst AOT Settings** and undo the checkmark on **Enable Burst Compilation**.
 
-<img src="/images/development/burst.png" alt="Burst" class="mx-auto max-w-xl" />
+![Burst $class="mx-auto max-w-xl"](/images/development/burst.png)
 
 ### IP of your HoloLens2
 To be able to deploy chARpack via WiFi, you need to connect your machine that runs Unity to the same network (or a reachable network) as the HoloLens2.
@@ -62,7 +62,7 @@ Now you're ready to use chARpack.
 Right click **chARpack (Universal Windows)** in the solution explorer and go to *Publish > Create App Packages*.
 In the following dialogue, make sure you have selected the same configuration and platform as earlier. For all other options, the default settings are usually fine.
 
-<img src="/images/development/app_package.png" alt="AppPackage" class="mx-auto max-w-xl" />
+![AppPackage $class="mx-auto max-w-xl"](/images/development/app_package.png)
 
 Click **Create** and wait for the build to finish.
 
@@ -75,7 +75,7 @@ Select **Install**. Once the installation is finished, you can access the chARpa
 
 ## Deploy on Meta Quest 2 & 3
 If you want to deploy the app to a Meta Quest device, switch your **Build Platform** to **Android** in the Build Settings.
-You can either directly build and deploy on to device or build an `.apk` file which you can deploy manually via the <a href="https://developer.oculus.com/downloads/package/oculus-developer-hub-win" target="_blank" rel="noreferrer">Meta Quest Developer Hub</a>.
+You can either directly build and deploy on to device or build an `.apk` file which you can deploy manually via the [Meta Quest Developer Hub](https://developer.oculus.com/downloads/package/oculus-developer-hub-win).
 In any case you should download the Developer Hub to activate the **Developer Mode** on your device.
 If the Developer Mode is already activated and your device is connected via USB to the PC that runs Unity, then your Meta Quest device should show up in the Build Settings in the **Run Device** list.
 From here you can **Build and Run** to directly upload the software to your device.
