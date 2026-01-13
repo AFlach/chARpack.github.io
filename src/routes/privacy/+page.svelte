@@ -1,7 +1,7 @@
 <script>
 	import { Heading, P, A, Mark, Secondary } from 'flowbite-svelte'
 </script>
-
+<div class="w-full max-w-6xl mx-auto px-6">
 <Heading tag="h1" class="mb-6">Privacy notice</Heading>
 <P class="mb-6">
 Data protection information / data protection declaration
@@ -61,3 +61,4 @@ You have the right to complain to the supervisory authority, should you be of th
 
 The competent supervisory authority is the State Data Protection and Freedom of Information Officer of Baden-Württemberg – Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg.
 </P>
+</div>

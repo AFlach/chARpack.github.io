@@ -14,7 +14,7 @@
 	<Carousel {images} loop {showCaptions} {showThumbs} duration="8000"/>
 </div>
 
-<div>
+<div class="w-full max-w-6xl mx-auto px-6">
     <Heading tag="h1" class="mb-6">chARpack <Secondary>Chemistry in Augmented Reality Package</Secondary></Heading>
 	<P>
 	The basic purpose of the project is to provide an environment for exploring the prospects of augmented reality (AR) in chemistry and related molecular sciences. We believe that holographic projections are a future technology with tremendous impact in all scientific fields that extensively work with three-dimensional models. In chemistry, the idea of a molecular structure is a fundamental concept since the days of van't Hoff (organic stereochemistry) and Werner (complex chemistry) and the key to understanding reactivity and properties of chemical compounds. One big advantage of AR is the much better integration into conventional workflows of computational chemistry, as it provides immersive 3D models without the drawback of abandoning the real world like in fully virtual environments. 

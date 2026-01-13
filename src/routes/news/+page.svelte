@@ -10,7 +10,7 @@
 		post.metadata.date = date.toISOString().slice(0, 10);
 	});
 </script>
-
+<div class="w-full max-w-6xl mx-auto px-6">
 <div class="self-center">
 <Heading tag="h1" class="mb-6 mt-6">News</Heading>
 </div>
@@ -24,4 +24,4 @@
     <svelte:component this={post.default} />
 </div>
 {/each}
-
+</div>

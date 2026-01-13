@@ -2,6 +2,7 @@
 	import { Heading, P, A, Mark, Secondary } from 'flowbite-svelte'
 </script>
 
+<div class="w-full max-w-6xl mx-auto px-6">
 <Heading tag="h1" class="mb-6">Legal notice</Heading>
 
 <P>
@@ -52,6 +53,7 @@
     </tr>
 </table>
 </P>
+</div>
 
 <style>
     table {
