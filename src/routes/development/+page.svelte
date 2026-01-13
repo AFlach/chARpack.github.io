@@ -10,10 +10,10 @@
 <ul>
 {#each sections as section}
   <li><Heading tag="h2" class="mb-4">{section.title}</Heading></li>
-  <ol>
+  <ul>
   {#each section.pages as page}
       <li><Heading tag="h3" class="ml-6"><a href={page.absRoute}>{page.metadata.title}</a></Heading></li>
   {/each}
-  </ol>
+  </ul>
 {/each}
 </ul>
